@@ -1,0 +1,99 @@
+body{
+    border: none;
+    padding: 73.5% 0;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#FFFF00,#26547C);
+}
+
+#hero{
+    margin: auto;
+}
+
+#happy-birthday{
+    /* background-image: url(hb.webp);
+    width: 500px;
+    height: 500px;
+    border: none;
+    margin-bottom: 30px; */
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 500px;
+    height: 500px;
+    background-image: url(hb.webp);
+    background-size: cover;
+    border: none;
+}
+
+#btn{
+    display: block;
+    margin: 10px auto;
+}
+
+a{
+    text-decoration: none;
+    border: 3px solid yellow;
+    color: transparent;
+    padding: 40px 80px;
+    font-size: 28px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    transition: all 0.5s;
+    position: relative;
+}
+
+  a:before {
+    content: "Click Me";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    background: rgb(34, 34, 34);
+    font-size: 28px;
+    top: 0;
+    left: 100%;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(0) rotatey(0);
+    opacity: 0;
+  }
+
+  a:hover:before {
+    transform: scale(1) rotatey(360deg);
+    left: 0;
+    opacity: 1;
+  }
+
+  a:after {
+    content: "Click Me";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    background: rgb(34, 34, 34);
+    font-size: 28px;
+    top: 0;
+    left: 0;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    transition: all 1s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scale(1) rotatey(0);
+    opacity: 1;
+  }
+
+  a:hover:after {
+    transform: scale(0) rotatey(360deg);
+    left: -100%;
+    opacity: 0;
+  }
+  
